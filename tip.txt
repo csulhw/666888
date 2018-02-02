@@ -1,0 +1,2 @@
+删除工作区  git checkout -- file
+暂存区撤销,重新放回工作区  git reset HEAD file
