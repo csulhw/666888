@@ -1,2 +1,14 @@
 删除工作区  git checkout -- file
 暂存区撤销,重新放回工作区  git reset HEAD file
+
+git checkout 2.切换到另一个分支
+git reset 2.回退版本    HEAD 表示最新的版本  HEAD^ HEAD^^ HEAD~100
+
+从暂存区提交到了版本库 
+  git reset --hard HEAD^ 
+  gti reset --hard 1234567 回退到上一个版本
+git log 查看提交历史
+回到未来 git reflog 
+git rm 从版本库中删除  git rm file   并且 git commit 
+删错了从版本库恢复  git checkout --test.txt
+git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
